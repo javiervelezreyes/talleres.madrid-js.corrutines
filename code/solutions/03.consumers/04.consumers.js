@@ -26,7 +26,7 @@ function Test () {
   let L1 = Level (A, B, C)
   let L2 = Level (A, B, C)
 
-  for (let x of [1, 2, 3]) {
+  for (let x of [1, 2, 3, 7, 12, 23]) {
     E1.next (x)
     E2.next (x)
     L1.next (x)

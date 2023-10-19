@@ -23,20 +23,20 @@ function Async (fn) {
   }
 }
 
-function Test () {
-  let aAdd = Async (function (x, y) { return x + y })
-  let aSub = Async (function (x, y) { return x - y })
-  let aMul = Async (function (x, y) { return x * y })
-  let aDiv = Async (function (x, y) { return x / y })
+// function Test () {
+//   let aAdd = Async (function (x, y) { return x + y })
+//   let aSub = Async (function (x, y) { return x - y })
+//   let aMul = Async (function (x, y) { return x * y })
+//   let aDiv = Async (function (x, y) { return x / y })
 
-  execute (function * () {
-    let x = yield aAdd (3, 2)
-    let y = yield aSub (4, 2)
-    let z = yield aMul (x, y)
+//    execute(function () {
+//     let x = yield aAdd (3, 2)
+//     let y = yield aSub (4, 2)
+//     let z = yield aMul (x, y)
     
-    console.log (yield aDiv (z, 2))
-  })
-}
+//     console.log (yield aDiv (z, 2))
+//   })
+// }
 
 function Wait (ms) {
   return new Promise (function (ok) {
@@ -73,8 +73,8 @@ function BonusC () {
   }
 }
 
-Test ()
+//Test ()
 
-// BonusA ()
+//BonusA ()
 // BonusB ()
-// BonusC ()
+BonusC ()

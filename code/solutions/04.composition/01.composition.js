@@ -42,7 +42,7 @@ function Test () {
   function C (x) { return  (x % 2) }
   function D (x) { return !(x % 2) }
 
-  let SA = Range (1, 10)
+  let SA = Range (1, 10) 
   let SB = Range (1, 10)
   let SC = Range (1, 10)
   let SD = Range (1, 10)

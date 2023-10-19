@@ -6,15 +6,59 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
   <title>Orquestación de Código en JavaScript</title>
+  <style>
+    .header {
+      width      : 100%;
+    }
+    .main {
+      margin     : 50px 0;
+    }
+    .section {
+      font-size  : 30px;
+      text-align : center;
+    }
+    .link {
+      width      : 300px;
+      display    : block;
+      margin     : 5px auto;
+    }
+  </style>
 </head>
 <body>
-  <header>
+  <header class="header">
     <h1>Orquestación de Código en JavaScript</h1>
-    <h3>Madrid JS</h3>
+    <h3>Soluciones</h3>
   </header>
-  <ul>
-    <li><a href="/problems/index.html">  Problemas  </a></li>
-    <li><a href="/solutions/index.html"> Soluciones </a></li>
-  </ul>
+  <main class="main">
+    <h2 class="section">I.Intro</h2>
+      <button class="link" path="/solutions/01.intro/01.intro.js"> Intro I   </button>
+      <button class="link" path="/solutions/01.intro/02.intro.js"> Intro II  </button>
+      <button class="link" path="/solutions/01.intro/03.intro.js"> Intro III </button>
+    <h2 class="section">II.Production Patterns</h2>
+      <button class="link" path="/solutions/02.producers/01.producers.js"> Iterator   Pattern </button>
+      <button class="link" path="/solutions/02.producers/02.producers.js"> Sequence   Pattern </button>
+      <button class="link" path="/solutions/02.producers/03.producers.js"> Serializer Pattern </button>
+      <button class="link" path="/solutions/02.producers/04.producers.js"> Walker     Pattern </button>
+    <h2 class="section">III.Consumption Patterns</h2>
+      <button class="link" path="/solutions/03.consumers/01.consumers.js"> Logger     Pattern </button>
+      <button class="link" path="/solutions/03.consumers/02.consumers.js"> Store      Pattern </button>
+      <button class="link" path="/solutions/03.consumers/03.consumers.js"> Observer   Pattern </button>
+      <button class="link" path="/solutions/03.consumers/04.consumers.js"> Worker     Pattern </button>
+    <h2 class="section">IV.Composition Patterns</h2>
+      <button class="link" path="/solutions/04.composition/01.composition.js"> Adapter     Pattern </button>
+      <button class="link" path="/solutions/04.composition/02.composition.js"> Shuffler    Pattern </button>
+      <button class="link" path="/solutions/04.composition/03.composition.js"> Aggregator  Pattern </button>
+      <button class="link" path="/solutions/04.composition/04.composition.js"> Chain Push  Pattern </button>
+      <button class="link" path="/solutions/04.composition/05.composition.js"> Chain Pull  Pattern </button>
+    <h2 class="section">V.Coordination Patterns</h2>
+      <button class="link" path="/solutions/05.coordination/01.coordination.js"> Holter      Pattern </button>
+      <button class="link" path="/solutions/05.coordination/02.coordination.js"> Controller  Pattern </button>
+      <button class="link" path="/solutions/05.coordination/03.coordination.js"> Dispatcher  Pattern </button>
+      <button class="link" path="/solutions/05.coordination/04.coordination.js"> Interceptor Pattern </button>
+      <button class="link" path="/solutions/05.coordination/05.coordination.js"> Checker     Pattern </button>
+      <button class="link" path="/solutions/05.coordination/06.coordination.js"> Enritcher   Pattern </button>
+  </main>
+
+  <script type="module" src="../helpers/helper.init.js"></script>
 </body>
 </html>
